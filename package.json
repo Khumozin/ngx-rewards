@@ -10,7 +10,7 @@
     "test": "ng test",
     "commit": "git-cz"
   },
-  "private": true,
+  "private": false,
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
