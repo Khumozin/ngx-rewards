@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
-import { NgxRewardsComponent } from './ngx-rewards.component';
 
+import { BalloonDirective, ConfettiDirective, EmojiDirective } from './directives';
 
+const DIRECTIVES = [BalloonDirective, ConfettiDirective, EmojiDirective];
 
 @NgModule({
-  declarations: [
-    NgxRewardsComponent
-  ],
-  imports: [
-  ],
-  exports: [
-    NgxRewardsComponent
-  ]
+  declarations: [...DIRECTIVES],
+  imports: [],
+  exports: [...DIRECTIVES],
 })
-export class NgxRewardsModule { }
+export class NgxRewardsModule {}
