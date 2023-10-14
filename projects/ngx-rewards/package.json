@@ -1,12 +1,33 @@
 {
+  "author": "Khumo Mogorosi",
   "name": "ngx-rewards",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/collection.json ../../dist/ngx-rewards/"
+  },
+  "keywords": [
+    "angular",
+    "angular 2",
+    "ngx-rewards"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "ng-add": {
+    "save": "true"
+  },
+  "schematics": "./schematics/collection.json",
   "peerDependencies": {
     "@angular/common": "^16.2.0",
     "@angular/core": "^16.2.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khumozin/ngx-rewards"
   },
   "sideEffects": false
 }
