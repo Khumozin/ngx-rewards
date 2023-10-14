@@ -47,6 +47,9 @@ jobs:
         run: npm install
 
       - name: Build Library
+        run: npm run build NgxRewards
+
+      - name: Copy Files
         run: cd projects/ngx-rewards && npm run build
 
       - name: Release Library
