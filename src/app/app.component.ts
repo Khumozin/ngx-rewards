@@ -7,9 +7,9 @@ import { EmojiConfig } from 'projects/ngx-rewards/src/public-api';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  defaultEmoji = ['🤓', '😊', '🥳', '😃', '🤪', '🔥', '🎉'];
+  public defaultEmoji = ['🤓', '😊', '🥳', '😃', '🤪', '🔥', '🎉'];
 
-  emojiConfig: EmojiConfig = {
+  public emojiConfig: EmojiConfig = {
     elementCount: 50,
     elementSize: 20,
   };
