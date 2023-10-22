@@ -10,7 +10,7 @@ export class AppComponent {
   public defaultEmoji = ['🤓', '😊', '🥳', '😃', '🤪', '🔥', '🎉'];
 
   public emojiConfig: EmojiConfig = {
-    elementCount: 50,
+    elementCount: 20,
     elementSize: 20,
   };
 }
